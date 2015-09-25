@@ -9,5 +9,6 @@ signIn.config(function($stateProvider, $urlRouterProvider){
     $stateProvider.state('signin', {
         url:"sign-in",
         templateUrl: "partials.sign-in.html"
+        controller: "StudentsCtrl"
     });
 });

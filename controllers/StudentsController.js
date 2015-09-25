@@ -5,5 +5,5 @@ signIn.controller("StudentsCtrl", function StudentsCtrl(){
         { name: "Sam 'Sammy' Samwise"},
         { name: "Frodo Bagginsberg" },
         { name: "Sven Svensgardsen" }
-    };
+    }
 });
