@@ -1,8 +1,15 @@
 <h1>Hi There</h1>
-<div ng-show = "students.length">
+<div  ng-show = "StudentsFactory.students.length">
     <h3>Please click on your name to sign in.</h3>
     <ul>
-        <li ng-repeat="item in students">{{ item.name }}<button>Sign In</button></li>
+        <li ng-repeat="item in students">{{ item.name }}<button ng-click="SignStudentsIn()">Sign In</button></li>
     </ul>
+</div>
             <!-- <a ui-sref="signedin.students({ signedInId})" -->
+
+<div ng-show="signedInStudents.length">
+    <ul>
+        <li ng-repeat="item in signedInStudents">{{ item.name }}</li>
+    </ul>
+
 </div>
