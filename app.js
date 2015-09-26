@@ -11,4 +11,10 @@ signIn.config(function($stateProvider, $urlRouterProvider){
         templateUrl: "partials/signin.html",
         controller: "StudentsCtrl"
     });
+
+    $stateProvider.state('attendance', {
+        url: "attendance",
+        templateUrl: "partials/attendance.html",
+        contoller: "AttendanceCtrl"
+    });
 });
