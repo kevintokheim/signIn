@@ -3,7 +3,7 @@
     <h3>Please click on your name to sign in.</h3>
     <ul>
         <li ng-repeat="item in students">{{ item.name }}
-            <button ng-click="StudentsFactory.SignStudentsIn(item)">Sign In</button>
+            <button ng-click="signStudentsIn(item)">Sign In</button>
         </li>
     </ul>
 </div>
