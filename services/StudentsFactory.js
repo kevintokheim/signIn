@@ -9,5 +9,6 @@ signIn.factory("StudentsFactory", function StudentsFactory(){
         { name: "Sven Svensgardsen", signedIn: false }
     ];
 
+    console.log(factory.students);
     return factory;
 });
