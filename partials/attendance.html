@@ -5,10 +5,10 @@
     </ul>
 </div> -->
 
-<div ng-show = "attendingStudents.length">
+<div ng-show = "nonAttendingStudents.length">
     <h3>Not Signed In:</h3>
     <ul>
-        <li ng-repeat="item in attendingStudents = (students | filter:{signedIn: false})">{{ item.name }}></li>
+        <li ng-repeat="item in nonAttendingStudents = (students | filter:{signedIn: false})">{{ item.name }}></li>
     </ul>
 </div>
 
