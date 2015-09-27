@@ -3,8 +3,8 @@
     <h3>please click on your name to sign in.</h3>
     <ul>
         <li ng-repeat="item in students">{{ item.name }}
-            <button ng-click="signStudentsIn(item); signOut = true" ng-hide="signOut">Sign In</button>
-            <button ng-click="signStudentsOut(item); signOut = false" ng-show="signOut">Sign out</button>
+            <button class = "btn btn-primary" ng-click="signStudentsIn(item); signOut = true" ng-hide="signOut">Sign In</button>
+            <button class = "btn btn-success" ng-click="signStudentsOut(item); signOut = false" ng-show="signOut">Sign out</button>
         </li>
     </ul>
 </div>

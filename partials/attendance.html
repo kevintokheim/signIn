@@ -5,13 +5,13 @@
 <div ng-show = "attendingStudents.length">
     <h3>Signed In:</h3>
     <ul>
-        <li ng-repeat="item in attendingStudents = (students | filter:{signedIn: true})">{{ item.name }}></li>
+        <li ng-repeat="item in attendingStudents = (students | filter:{signedIn: true})">{{ item.name }}</li>
     </ul>
 </div>
 
 <div ng-show = "nonAttendingStudents.length">
     <h3>Not Signed In:</h3>
     <ul>
-        <li ng-repeat="item in nonAttendingStudents = (students | filter:{signedIn: false})">{{ item.name }}></li>
+        <li ng-repeat="item in nonAttendingStudents = (students | filter:{signedIn: false})">{{ item.name }}</li>
     </ul>
 </div>
