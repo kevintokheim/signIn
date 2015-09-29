@@ -15,3 +15,6 @@
         <li ng-repeat="item in nonAttendingStudents = (students | filter:{signedIn: false})">{{ item.name }}</li>
     </ul>
 </div>
+
+<button ui-sref="signin">Signin</button>
+<button ui-sref="home">Home</button>

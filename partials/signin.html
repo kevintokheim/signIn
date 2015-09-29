@@ -3,13 +3,15 @@
     <h3>please click on your name to sign in.</h3>
     <ul>
         <li ng-repeat="item in students">{{ item.name }}
-            <button class = "btn btn-primary" ng-click="signStudentsIn(item); signOut = true" ng-hide="signOut">Sign In</button>
-            <button class = "btn btn-success" ng-click="signStudentsOut(item); signOut = false" ng-show="signOut">Sign out</button>
+            <button class = "btn btn-primary" ng-click="signStudentsIn(item)" ng-hide="item.signedIn">Sign In</button>
+            <button class = "btn btn-success" ng-click="signStudentsOut(item)" ng-hide="!item.signedIn">Sign out</button>
         </li>
     </ul>
 </div>
 
 <button ui-sref="attendance">See who's here</button>
+<button ui-sref="home">Home</button>
+
             <!-- <a ui-sref="signedin.students({ signedInId})" -->
 <!-- <div ng-controller="SignedInCtrl">
     <div ng-show="signedInStudents.length">
